@@ -1,0 +1,107 @@
+
+<!--Ｃａｒｏｕｓｅｌ-->
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+   <!--Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+ 
+   <!--Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      　　<%=image_tag asset_path("glass01.jpg")%>
+      <div class="carousel-caption">
+        <p>slide1</p>
+      </div>
+    </div>
+    <div class="item">
+      <%=image_tag asset_path("glass04.jpg")%>
+      <div class="carousel-caption">
+        <p>slide2</p>
+      </div>
+    </div>
+     <div class="item">
+      <%=image_tag asset_path("glass07.jpg") %>
+      <div class="carousel-caption">
+        <p>slide3</p>
+      </div>
+    </div>
+  </div>
+ 
+   <!--Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<!--test-news-->
+<div class="block">
+<p>NEWS</p><p>2016/10/01 〇〇入荷しました。</p>
+</div>
+
+
+<!-- test-->
+
+<section class="action">
+<div class="container">
+<div class="left-text hidden-xs">
+<h4>0850</h4>
+<p><em>英国ロンドンの老舗アイウェアブランド。</em><br><br>クラシックなシェイプの黒ぶち眼鏡がとくに人気があり、とにかく線が強い、太い、黒い眼鏡を探しているならまずチェックしてみるとよいと思います。</p>
+</div>
+<div class="right-image hidden-xs"></div>
+</div>
+</section>
+<!--test2-->
+<section class="action">
+<div class="container">
+<div class="right-text hidden-xs">
+<h4>ベベル / BEVEL</h4>
+<p><em> ハイクオリティへのこだわり</em><br><br> 繊細で、かつ妥協のないモノづくりは、ハイクオリティを特長とする日本ならではの技術力。これに、アミパリの持つこだわりをプラスしたメガネがジェイスピリット（JSPIRIT）です。素材の選定から始まり、完璧なフィニッシュへ至るまでの工程一つ一つには、丁寧にモノづくりを行う日本人特有の職人精神が宿っています。</p>
+</div>
+<div class="left-image hidden-xs"></div>
+</div>
+</section>
+<!--test3-->
+<div class="gallery">
+<div class="text-center">
+<h2>Gallery</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat quod voluptate consequuntur ad quasi, dolores obcaecati ex aliquid, dolor provident </p>
+</div>
+<div class="container">
+<div class="col-md-4">
+<figure class="effect-marley">
+<%=image_tag asset_path("glass03.jpg"), class: "img-responsive" %>
+<figcaption>
+<h4>Four Nines 999.9</h4>
+<p>1995年10月に誕生した日本を代表するアイウェアブランド。</p>
+</figcaption>
+</figure>
+</div>
+<div class="col-md-4">
+<figure class="effect-marley">
+<%=image_tag asset_path("glass03.jpg"), class: "img-responsive"  %>
+<figcaption>
+<h4>OLIVER PEOPLES</h4>
+<p>1986年、カリフォルニアはLAにて創業したアイウェアブランド。</p>
+</figcaption>
+</figure>
+</div>
+<div class="col-md-4">
+<figure class="effect-marley">
+<%=image_tag asset_path("glass05.jpg"), class: "img-responsive" %>
+<figcaption>
+<h4>JAPONISM</h4>
+<p>日本の老舗眼鏡OEMメーカー、BOSTON CLUBによって立ち上げられた自社ブランド。
+</p>
+</figcaption>
+</figure>
+</div>
+</div>
+
+<%= render partial: 'spree/shared/footer' %>

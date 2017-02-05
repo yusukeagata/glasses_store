@@ -7,6 +7,9 @@
 //= require jquery
 //= require jquery_ujs
 //= require spree/frontend
+//= require spree/frontend/jquery.inview
+//= require spree/frontend/test
+
 
 //= require_tree .
 //= require spree/frontend/spree_i18n

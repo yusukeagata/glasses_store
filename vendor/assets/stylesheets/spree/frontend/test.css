@@ -1,0 +1,22 @@
+.list{
+	margin: 50px 50px 50px 50px;
+	list-style-type: none;
+	overflow: hidden;
+}
+.list li{
+	margin: 50px 20px 50px 20px;
+	float: left;
+	transition: .5s;
+}
+.list-mv07{
+	opacity: 0;
+	transform: translate(0,60px); 
+	-webkit-transform: translate(0,60px); 
+}
+.mv07{
+	/* width: 30px; */
+    /* height: 30px; */
+	opacity: 1.0;
+	transform: translate(0,0); 
+	-webkit-transform: translate(0,0);
+}

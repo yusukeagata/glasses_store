@@ -1,0 +1,114 @@
+
+.version.index /* version checker */
+{
+	color: #0000E1;
+	background-color: #5D50F8;
+}
+
+/*スライドショーブロックの設定
+---------------------------------------------------------------------------*/
+#slideshowu
+{
+	border: solid 10px #FFF;	/*枠線の線種、幅、色*/
+	overflow: hidden;
+	margin-bottom: 30px;
+	-webkit-box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+	box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+}
+
+/*大画像の設定
+---------------------------------------------------------------------------*/
+#image1,#image2,#image3,#image4,#image5,#image6
+{
+	margin-right: -10000px;
+	width: 100%;
+	height: auto;
+}
+#image1 img,#image2 img,#image3 img,#image4 img,#image5 img,#image6 img
+{
+	width: 100%;
+	height: auto;
+	vertical-align: bottom;
+}
+#image1{z-index: 1;}
+#image2{z-index: 2;}
+#image3{z-index: 3;}
+#image4{z-index: 4;}
+#image5{z-index: 5;}
+#image6{z-index: 6;}
+
+/*サムネイル画像の設定
+---------------------------------------------------------------------------*/
+/*サムネイルブロックの配置場所*/
+#popup
+{
+	position: absolute;
+	top: 630px;
+}
+/*サムネイルのサイズ*/
+#popup img
+{
+	width:60px;
+	height:60px;
+}
+#image1_mini,#image2_mini,#image3_mini,#image4_mini,#image5_mini,#image6_mini
+{
+	width:60px;
+	height:60px;
+	border: solid 1px #FFFFFF;
+	opacity: 0.5;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	filter: alpha(opacity=50);
+	position: relative;
+	margin-right: -10000px;
+}
+/*サムネイル１個ごとの配置場所*/
+#image1_mini{z-index: 11;left: 260px;}
+#image2_mini{z-index: 12;left: 340px;}
+#image3_mini{z-index: 13;left: 420px;}
+#image4_mini{z-index: 14;left: 500px;}
+#image5_mini{z-index: 15;left: 580px;}
+#image6_mini{z-index: 15;left: 660px;}
+
+#image1_mini:hover,#image1_mini:active,#image1_mini.SSSlideLinkSelected,
+#image2_mini:hover,#image2_mini:active,#image2_mini.SSSlideLinkSelected,
+#image3_mini:hover,#image3_mini:active,#image3_mini.SSSlideLinkSelected,
+#image4_mini:hover,#image4_mini:active,#image4_mini.SSSlideLinkSelected,
+#image5_mini:hover,#image5_mini:active,#image5_mini.SSSlideLinkSelected,
+#image6_mini:hover,#image6_mini:active,#image6_mini.SSSlideLinkSelected
+{
+	border: solid 1px #FFFFFF;
+	opacity: 1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	width: 60px;
+	height: 60px;
+	min-height: 0px;
+	margin: 0px -10000px -1px 0px;
+}
+
+/*他
+---------------------------------------------------------------------------*/
+.SSFirstButton,.SSPreviousButton,.SSNextButton,.SSLastButton,.SSSlideLink,.SSCloseButton /* slideshowFreeStyle */
+{
+	cursor: pointer;
+}
+
+.SSSlideLoading /* slideshowFreeStyle */
+{
+	background: url("../images/loading.gif") no-repeat center center;
+}
+
+@media (max-width: 800px) {
+
+#contents
+{
+	width: auto;
+}
+
+#popup
+{
+	display: none;
+}
+
+}
